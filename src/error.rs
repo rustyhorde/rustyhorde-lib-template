@@ -76,10 +76,14 @@ external_error!(std::io::Error, ErrKind::Io);
 external_error!(String, ErrKind::Str);
 external_error!(std::env::VarError, ErrKind::Var);
 
+/// The error kind of an error thrown by `{{project-name}}`
 #[derive(Debug)]
 pub enum ErrKind {
+    /// An Io error
     Io(std::io::Error),
+    /// An error string
     Str(String),
+    /// An env `VarError`
     Var(std::env::VarError),
 }
 
