@@ -46,7 +46,7 @@
 
 mod error;
 
-pub use crate::error:{Err, ErrKind, Result};
+pub use crate::error::{Err, ErrKind, Result};
 
 #[cfg(test)]
 mod tests {
