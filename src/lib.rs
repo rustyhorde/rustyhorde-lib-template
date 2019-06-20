@@ -44,6 +44,10 @@
 #![allow(single_use_lifetimes)]
 #![doc(html_root_url = "https://docs.rs/{{project-name}}/0.1.0")]
 
+mod error;
+
+pub use crate::error:{Err, ErrKind, Result};
+
 #[cfg(test)]
 mod tests {
     #[test]
