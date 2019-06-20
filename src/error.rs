@@ -112,6 +112,7 @@ impl fmt::Display for ErrKind {
     }
 }
 
+#[allow(dead_code)]
 crate fn display_error(error: &dyn Error) {
     eprintln!("{}", error.description());
 
